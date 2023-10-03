@@ -1,0 +1,16 @@
+header img {
+    width: 100%; 
+    height: 100px;
+}
+.foto{
+    position: fixed; 
+    top: 116px; 
+}
+.foto img{
+    width: 130px; 
+    height: 175px;
+}
+.Datos {
+    position: fixed;
+    left: 150px;
+}
