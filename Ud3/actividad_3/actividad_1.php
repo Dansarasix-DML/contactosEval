@@ -38,8 +38,8 @@
     echo '<table style="border-collapse: collapse;">';
     echo '<tr><th style="border: medium solid black; background-color: #CCCCCC;"></th>';
 
-    for ($i = 1; $i <= 10; $i++) {
-        echo "<th style=\"border: medium solid black; background-color: #CCCCCC;\">$i</th>";
+    foreach ($tablero as $key => $value) {
+        echo "<th style=\"border: medium solid black; background-color: #CCCCCC;\">$key</th>";
     }
 
     //ForEach para imprimir las letras
@@ -113,6 +113,14 @@
             "Estados Unidos" => array("Washington D. C.", "Bandera de Estados Unidos"),
             "México" => array("Ciudad de México", "Bandera de México"),
             "Argentina" => array("Buenos Aires", "Bandera de Argentina"),
+        ),
+        "África" => array(
+            "Libia" => array("Trípoli", "Bandera de Libia"),
+            "Madagascar" => array("Antananarivo", "Bandera de Madagascar"),
+            "Nigeria" => array("Abuya", "Bandera de Nigeria")
+        ),
+        "Oceanía" => array(
+            "Autralia" => array("Canberra", "Bandera de Autralia")
         )
     );
 

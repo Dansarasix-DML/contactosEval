@@ -28,7 +28,7 @@
     $elegido = function ($alumnos) {
         echo "El alumno elegido es:";
         //tandom_int devuelve un número aleatorio entre un mínimo y un máximo
-        echo "<h2>" . $alumnos[random_int(0, count($alumnos))] . "</h2>";
+        echo "<h2>" . $alumnos[random_int(0, count($alumnos) - 1)] . "</h2>";
     };
 
     $elegido($alumnos);
