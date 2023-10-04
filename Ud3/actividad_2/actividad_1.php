@@ -13,4 +13,7 @@
         echo("$i<br>");
         $i++;
     }
+
+    echo "<br/>";
+    echo "<a href=\"https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_2/actividad_1.php\">GITHUB</a>";
 ?>

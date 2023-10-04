@@ -22,4 +22,7 @@
     for ($i=7; $i <= 9; $i++) { 
         echo '<td style="border: medium solid black; text-align: center; background-color:' . $colors[$i - 1] . ' ;">' . $colors[$i - 1] . '</td>';
     }
+
+    echo "<br/>";
+    echo "<a href=\"https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_2/actividad_4.php\">GITHUB</a>";
 ?>

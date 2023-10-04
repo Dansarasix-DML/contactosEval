@@ -27,9 +27,12 @@
      */
     $elegido = function ($alumnos) {
         echo "El alumno elegido es:";
-        //tandom_int devuelve un número aleatorio entre un mínimo y un máximo
+        //random_int devuelve un número aleatorio entre un mínimo y un máximo
         echo "<h2>" . $alumnos[random_int(0, count($alumnos) - 1)] . "</h2>";
     };
 
     $elegido($alumnos);
+
+    echo "<br/>";
+    echo "<a href=\"https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_3/actividad_3.php\">GITHUB</a>";
 ?>

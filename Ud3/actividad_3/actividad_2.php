@@ -19,4 +19,7 @@
     foreach ($ejercicios as $ejercicio => $url) {
         echo "<a href=" . $url . ">" . $ejercicio . "</a><br>";
     }
+
+    echo "<br/>";
+    echo "<a href=\"https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_3/actividad_2.php\">GITHUB</a>";
 ?>
