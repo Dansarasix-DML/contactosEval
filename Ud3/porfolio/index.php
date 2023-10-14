@@ -110,6 +110,7 @@
         </ul>
         <!-- <p>Linkedin: <a href="<?php echo $linkedin?>">Linkedin</a></p>
         <p>Twitter: <a href="<?php echo $twitter?>">Twitter</a></p> -->
+        <?php echo "<a href=\"http://localhost/DWES/\">PROYECTO DWES</a>"; ?>
         <p><?php echo $resumen?></p>
     </div>
 </body>
