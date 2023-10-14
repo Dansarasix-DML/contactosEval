@@ -1,31 +1,40 @@
 <?php
     /**
-     * Script de la Actividad 3
+     * Script de la Actividad 5
      *
      * @author Daniel Marín López
      * @version 0.01a
     */
 
-    $link="https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_1/actividad3.php";
-    echo "<h1>Ejercicio 3 Condicionales</h1>
-    <p>Carga fecha de nacimiento en variables y calcula la edad.</p>";
+    $link="https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_1/actividad5.php";
+    echo "<h1>Ejercicio 5 Condicionales</h1>
+    <p>Script que muestre una lista de enlaces en función del perfil de usuario:<br/>
+    Perfil Administrador: Pagina1, Pagina2, Pagina3, Pagina4<br/>
+    Perfil Usuario: Pagina1, Pagina2</p>";
 
-    $dia = 26;
-    $mes = 10;
-    $ano = 2000;
+    $perfil = "Administrador";
 
-    // date: Función que devuelve la fecha del sistema
-    $sys_day = date("d");
-    $sys_month = date("m");
-    $sys_year = date("Y");
-    
-    // Calculo de la edad
-    $edad = $sys_year - $ano;
-    if ($mes > $sys_month || ($mes == $sys_month && $dia > $sys_day)){
-        $edad--;
+    switch ($perfil) {
+        case 'Administrador':
+            echo "<h3>Enlaces de administrador</h3>";
+            echo "<ul>";
+            echo "<li><a href=\"#\">Página 1</a></li>";
+            echo "<li><a href=\"#\">Página 2</a></li>";
+            echo "<li><a href=\"#\">Página 3</a></li>";
+            echo "<li><a href=\"#\">Página 4</a></li>";
+            echo "</ul>";
+            break;
+        case "Usuario":
+            echo "<h3>Enlaces de usuario</h3>";
+            echo "<ul>";
+            echo "<li><a href=\"#\">Página 1</a></li>";
+            echo "<li><a href=\"#\">Página 2</a></li>";
+            echo "</ul>";
+            break;
+        default:
+            echo "<h3>Perfil no autorizado</h3>";
+            break;
     }
-
-    echo("La edad es de $edad");
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +44,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel Marín López">
     <link rel="stylesheet" href="../../css/bootstrap.css"></link>
-    <title>Unidad 3 - Ejercicio 3 Condicionales</title>
+    <title>Unidad 3 - Ejercicio 5 Condicionales</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
