@@ -6,7 +6,7 @@
      * @version 0.01a
     */
 
-    $serverIp = $_SERVER['HTTP_HOST'];
+    include "../porfolio/config/config.php";
 
     $iconos = array(
         "<img src=\"/icons/folder.gif\" alt=\"[DIR]\">",
