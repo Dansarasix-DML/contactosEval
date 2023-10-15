@@ -16,6 +16,10 @@
     */
 
     $link="https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_2/actividad_5.php";
+    echo "<h1>Ejercicio 5 Bucles</h1>";
+    echo "<p>Dado el mes y año almacenados en variables, escribir un programa que muestre el<br/>
+    calendario mensual correspondiente. Marcar el día actual en verde y los festivos<br/>
+    en rojo.</p>";
 
     //Cargamos el mes y el año
     $sys_month = date("n");

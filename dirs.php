@@ -33,25 +33,29 @@
             "porfolio" => "http://".$serverIp."/DWES/Ud2/porfolio/plantilla.php"
         ),
         "Unidad 3" => array(
-            "actividad 1" => array(
+            "Condicionales" => array(
                 "ejercicio 1" => "http://".$serverIp."/DWES/Ud3/actividad_1/actividad1.php",
                 "ejercicio 2" => "http://".$serverIp."/DWES/Ud3/actividad_1/actividad2.php",
                 "ejercicio 3" => "http://".$serverIp."/DWES/Ud3/actividad_1/actividad3.php",
                 "ejercicio 4" => "http://".$serverIp."/DWES/Ud3/actividad_1/actividad4.php"
             ),
-            "actividad 2" => array(
+            "Bucles" => array(
                 "ejercicio 1" => "http://".$serverIp."/DWES/Ud3/actividad_2/actividad_1.php",
                 "ejercicio 2" => "http://".$serverIp."/DWES/Ud3/actividad_2/actividad_2.php",
                 "ejercicio 3" => "http://".$serverIp."/DWES/Ud3/actividad_2/actividad_3.php",
                 "ejercicio 4" => "http://".$serverIp."/DWES/Ud3/actividad_2/actividad_4.php",
                 "ejercicio 5" => "http://".$serverIp."/DWES/Ud3/actividad_2/actividad_5.php"
             ),
-            "actividad 3" => array(
+            "Arrays" => array(
                 "ejercicio 1" => "http://".$serverIp."/DWES/Ud3/actividad_3/actividad_1.php",
                 "ejercicio 2" => "http://".$serverIp."/DWES/Ud3/actividad_3/actividad_2.php",
                 "ejercicio 3" => "http://".$serverIp."/DWES/Ud3/actividad_3/actividad_3.php",
                 "ejercicio 4" => "http://".$serverIp."/DWES/Ud3/actividad_3/actividad_4.php",
                 "ejercicio 5" => "http://".$serverIp."/DWES/Ud3/actividad_3/actividad_5.php"
+            ),
+            "Formularios" => array(
+                "ejercicio 2" => "http://".$serverIp."/DWES/Ud3/actividad_4/actividad_1.php",
+                "ejercicio 5" => "http://".$serverIp."/DWES/Ud3/actividad_4/actividad_5.php"
             ),
             "ejemplos 1" => array(
                 "ejemplo 1" => "http://".$serverIp."/DWES/Ud3/ejemplos_1/ejemplo1.php",

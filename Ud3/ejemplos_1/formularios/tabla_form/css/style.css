@@ -3,19 +3,20 @@ table{
 }
 
 th{
-    width: 50px; 
+    width: 60px;
+    text-align: center; 
     border: medium solid black; 
     background-color: #CCCCCC;
 }
 
 td{
-    width: 50px; 
+    width: 60px; 
     border: medium solid black; 
     text-align: center;
 }
 
 table input{
-    width: 20px;
+    width: 30px;
     text-align: center;
 }
 
