@@ -17,6 +17,7 @@
     $linkedin = $datos["redessociales"]["linkedin"];
     $twitter = $datos["redessociales"]["twitter"];
     $foto = $datos["foto"];
+    $proyectos = $datos["proyectos"];
     $resumen = $datos["resumen"];
 
     //Cargamos datos sistema
@@ -87,6 +88,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Daniel Marín López">
     <link rel="stylesheet" href="./css/style.css">
     <title>Plantilla</title>
 </head>
@@ -110,8 +112,24 @@
         </ul>
         <!-- <p>Linkedin: <a href="<?php echo $linkedin?>">Linkedin</a></p>
         <p>Twitter: <a href="<?php echo $twitter?>">Twitter</a></p> -->
-        <?php echo "<a href=\"http://localhost/DWES/\">PROYECTO DWES</a>"; ?>
+    </div>
+    <div class="info">
         <p><?php echo $resumen?></p>
+        <div class="proyectos">
+            <h2>Proyectos</h2>
+            <?php
+                foreach ($proyectos as $i => $value) {
+                    if ($value["url"] != ""){
+                        echo "<h3><a href=\"".$value["url"]."\">".$value["titulo"]."</a></h3>";
+                    } else {
+                        echo "<h3>".$value["titulo"]."</h3>";
+                    }
+                    echo $value["descripción"];
+                    echo "<br/>";
+                    echo $value["tecnologias"];
+                }
+            ?>
+        </div>
     </div>
 </body>
 </html>

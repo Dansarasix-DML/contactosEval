@@ -14,3 +14,8 @@ header img {
     position: fixed;
     left: 150px;
 }
+.info{
+    position: fixed;
+    left: 10px;
+    top: 280px;
+}

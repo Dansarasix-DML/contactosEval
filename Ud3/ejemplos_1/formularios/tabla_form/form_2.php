@@ -106,7 +106,7 @@
         <title>Tablas de Multiplicar</title>
     </head>
     <body>
-    <h2>Tablas de Multiplicar del 1 al 10</h2>
+        <h2>Tablas de Multiplicar del 1 al 10</h2>
         <form method="post" action="">
             <table>
             <tr><th>x</th>

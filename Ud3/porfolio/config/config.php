@@ -6,6 +6,8 @@
      * @version 0.01a
     */
 
+    $serverIp = $_SERVER['HTTP_HOST'];
+
     $datos = array(
         "nombre" => "Daniel",
         "apellidos" => "Marín López",
@@ -45,16 +47,18 @@
         ),
         "proyectos" => array(
             array(
-                "titulo" => "Proyecto 1",
-                "descripción" => "lorem ipsum",
+                "titulo" => "Desarrollo Web en Entorno Servidor",
+                "descripción" => "Trabajo realizado durante el curso",
                 "logo" => "",
-                "tecnologias" => "HTML, PHP, Wordpress"
+                "tecnologias" => "HTML, PHP",
+                "url" => "http://".$serverIp."/DWES/"
             ),
             array(
                 "titulo" => "Proyecto 2",
                 "descripción" => "lorem ipsum",
                 "logo" => "",
-                "tecnologias" => "MySQL, Python"
+                "tecnologias" => "MySQL, Python",
+                "url" => ""
             )
         ),
         "skills" => array(

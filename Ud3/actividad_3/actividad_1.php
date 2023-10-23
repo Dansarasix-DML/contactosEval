@@ -109,26 +109,26 @@
     //Array multidimensional asociativo
     $continentes = array(
         "Asia" => array(
-            "Japón" => array("Tokyo", "Bandera de Japón"),
-            "China" => array("Hon Kong", "Bandera de China")
+            "Japón" => array("Tokyo", "🇯🇵"),
+            "China" => array("Hon Kong", "🇨🇳")
         ),
         "Europa" => array(
-            "España" => array("Madrid", "Bandera de España"),
-            "Francia" => array("Paris", "Bandera de Francia"),
-            "Alemania" => array("Berlin", "Bandera de Alemania"),
+            "España" => array("Madrid", "🇪🇸"),
+            "Francia" => array("Paris", "🇫🇷"),
+            "Alemania" => array("Berlin", "🇩🇪"),
         ),
         "América" => array(
-            "Estados Unidos" => array("Washington D. C.", "Bandera de Estados Unidos"),
-            "México" => array("Ciudad de México", "Bandera de México"),
-            "Argentina" => array("Buenos Aires", "Bandera de Argentina"),
+            "Estados Unidos" => array("Washington D. C.", "🇺🇸"),
+            "México" => array("Ciudad de México", "🇲🇽"),
+            "Argentina" => array("Buenos Aires", "🇦🇷"),
         ),
         "África" => array(
-            "Libia" => array("Trípoli", "Bandera de Libia"),
-            "Madagascar" => array("Antananarivo", "Bandera de Madagascar"),
-            "Nigeria" => array("Abuya", "Bandera de Nigeria")
+            "Libia" => array("Trípoli", "🇱🇾"),
+            "Madagascar" => array("Antananarivo", "🇲🇬"),
+            "Nigeria" => array("Abuya", "🇳🇬")
         ),
         "Oceanía" => array(
-            "Autralia" => array("Canberra", "Bandera de Autralia")
+            "Autralia" => array("Canberra", "🇦🇺")
         )
     );
 

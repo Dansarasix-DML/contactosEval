@@ -24,7 +24,7 @@
     "González Martínez, Adrián", "Luna Martín, Sergio", "Luque Bravo, Laura", "Marín López, Daniel",
     "Mérida Velasco, Pablo", "Postigo Arévalo, Javier", "Priego Izquierdo, Alejandro", 
     "Rodríguez Machado, Andrés", "Ruz Del Río, Enrique", "Ruz López, Eduardo", "Solís Tejada, Andrea",
-    "Tamajón Hernández, Guillermo", "Vaquero Abad, Alejandro");
+    "Tamajón Hernández, Guillermo", "Vaquero Abad, Alejandro", "Francisco Javier González Romero");
 
     /**
      * Función anónima que da un alumno aleatorio
@@ -46,7 +46,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel Marín López">
-    <<link rel="stylesheet" href="../../css/bootstrap.css"></link>
+    <link rel="stylesheet" href="../../css/bootstrap.css"></link>
     <title>Unidad 3 - Ejercicio 3 Arrays</title>
 </head>
 <body>

@@ -1,0 +1,18 @@
+<?php
+
+    session_start();
+
+    $_SESSION["user"]="Daniel Marín López";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 2</title>
+</head>
+<body>
+    
+</body>
+</html>
