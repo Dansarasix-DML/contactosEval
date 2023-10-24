@@ -28,13 +28,8 @@
     <h1>Autentificación Básica</h1>
     <div id="sesion">
         <?php
-            if ($auth) {
-                echo "Bienvenido ".$user;
-                echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
-            } else {
-                include("./include/login_form.php");
-            }
-            
+            echo "Bienvenido ".$user;
+            echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
         ?>
     </div>
     <br/>

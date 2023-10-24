@@ -89,10 +89,6 @@
     <title>Tabla de verbos</title>
 </head>
 <body>
-    <?php
-        echo "DIFICULTAD ESTABLECIDA: " . $DIF . " (" . DIFICULTADES[$DIF - 1]["Literal"] . ")<br/>";
-        echo "Nº VERBOS ESTABLECIDOS: " . $N_VERBS;
-    ?>
     <span class="error"> <?php echo $N_VERBS_ERR; ?> </span>
     <form method="post" action="">
         <table border="1px">

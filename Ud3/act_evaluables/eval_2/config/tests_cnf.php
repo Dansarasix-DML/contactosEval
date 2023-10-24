@@ -1,4 +1,34 @@
 <?php
+
+define("LETTERS", array("A","B","C"));
+define("RESP", array("a","b","c"));
+
+$tests_imgs = array(
+      array(
+            0 => "./dir_img_test1/img1.jpg",
+            1 => "./dir_img_test1/img2.jpg",
+            3 => "./dir_img_test1/img4.jpg",
+            4 => "./dir_img_test1/img5.jpg",
+            5 => "./dir_img_test1/img6.jpg",
+            7 => "./dir_img_test1/img8.jpg",
+            9 => "./dir_img_test1/img10.jpg",
+      ),
+      array(
+            3 => "./dir_img_test2/img4.jpg",
+            4 => "./dir_img_test2/img5.jpg",
+            7 => "./dir_img_test2/img8.jpg",
+            8 => "./dir_img_test2/img9.jpg",
+      ),
+      array(
+            0 => "./dir_img_test3/img1.jpg",
+            1 => "./dir_img_test3/img2.jpg",
+            2 => "./dir_img_test3/img3.jpg",
+            3 => "./dir_img_test3/img4.jpg",
+            4 => "./dir_img_test3/img5.jpg",
+            8 => "./dir_img_test3/img9.jpg",
+      )
+);
+
 $aTests = array(
 array("idTest"=>1,
 "Permiso"=>"Permiso B",
