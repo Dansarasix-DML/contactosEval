@@ -28,7 +28,7 @@
     
 
     //Variables del formulario
-    $day = $month = $year = "";
+    $day = $month = $month_name = $year = "";
 
     //Cargamos el mes y el año
     $sys_month = date("n");
@@ -55,6 +55,9 @@
         // Validar año
         if (!empty($_POST["ano"]) && is_numeric($_POST["ano"]) && $_POST["ano"] >= 1900) {
             $year = $_POST["ano"];
+        }else{
+            $year_Err = "VALOR NO VÁLIDO, TOMANDO VALOR POR DEFECTO";
+            $year = $sys_year;
         }
 
         //Obtenemos días totales
@@ -85,9 +88,6 @@
         <link rel="stylesheet" href="./css/style.css"></link>
         <link rel="stylesheet" href="../../css/bootstrap.css"></link>
         <title>Unidad 3 - Ejercicio 2 Formularios</title>
-        <style>
-            .error {color: red;}
-        </style>
     </head>
     <body>
         <h1>Ejercicio 2 Formularios</h1>
@@ -100,12 +100,13 @@
         <?php
         if (!$procesaForm) { ?>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <input type="text" name="dia" value="<?php echo $day; ?>">
+            <!-- <input type="text" name="dia" value="<?php echo $day; ?>"> -->
             <select name="mes">
                 <?php
                     foreach ($meses as $key => $value) {
                         $selected = ($key == $month) ? "selected" : "";
                         echo "<option value='$value' $selected>$value</option>";
+                        $month_name = $meses[$month];
                     }
                 ?>
             </select>
@@ -116,6 +117,8 @@
             <span class="error"><?php echo $month_Err; ?></span>
             <span class="error"><?php echo $year_Err; ?></span>
             </form>
+            <br/>
+            <h2><?php echo $month_name.": ".$year ?></h2>
             <br/>
             <table border='1'>
             <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th><th>Domingo</th></tr>
@@ -146,6 +149,7 @@
                     }
                     
                     $cond = ($month == $sys_month and $year == $sys_year);
+                    $esdomingo = (date("N", mktime(0, 0, 0, intval($month), $d, intval($year))) == 7);
 
                     //Asignamos color
                     if ($d == $sys_day and $cond) {
@@ -158,6 +162,10 @@
                         $color = "red";
                     } else {
                         $color = "white";
+                    }
+
+                    if ($esdomingo) {
+                        $color = "domingo";
                     }
 
                     echo "<td class=\"".$color."\">$d</td>";

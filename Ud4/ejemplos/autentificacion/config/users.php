@@ -5,9 +5,9 @@
      */
     
     $users = array(
-        array("user"=>"daniel", "passwd"=>"1234"),
-        array("user"=>"lourdes", "passwd"=>"kk"),
-        array("user"=>"laura", "passwd"=>"usuario")
+        array("user"=>"daniel", "passwd"=>"1234", "profile"=>"Admin"),
+        array("user"=>"lourdes", "passwd"=>"kk", "profile"=>"Teacher"),
+        array("user"=>"laura", "passwd"=>"usuario", "profile"=>"Student")
     );
 
 ?>

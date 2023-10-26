@@ -35,7 +35,20 @@
                             echo "<li>".$iconos[0]." " . $ejes;
                             echo "<ul>";
                             foreach ($cont as $eje => $val) {
-                                echo "<li>".$iconos[1]."<a href=\"" . $val . "\"> " . $eje . "</a>";
+                                switch (gettype($val)) {
+                                    case "array":
+                                        echo "<li>".$iconos[0]." " . $eje;
+                                        echo "<ul>";
+                                        foreach ($val as $eje2 => $val2) {
+                                            echo "<li>".$iconos[1]."<a href=\"" . $val2 . "\"> " . $eje2 . "</a>";
+                                        }
+                                        echo "</ul>";
+                                        break;
+                                    
+                                    default:
+                                    echo "<li>".$iconos[1]."<a href=\"" . $val . "\"> " . $eje . "</a>";
+                                        break;
+                                }
                             }
                             echo "</ul>";
                             break;

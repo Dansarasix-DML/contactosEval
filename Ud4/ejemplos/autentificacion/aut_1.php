@@ -13,10 +13,11 @@
     if (!isset($_SESSION["auth"])) {
         $_SESSION["auth"] = false;
         $_SESSION["user"] = "Invitado";
+        $_SESSION["profile"] = "Invitado";
     }  
 
     $auth = $_SESSION["auth"];
-
+    $profile = $_SESSION["profile"];
     $user = $_SESSION["user"];
 
     $procesaForm = false;
@@ -43,7 +44,7 @@
     <div id="sesion">
         <?php
             if ($auth) {
-                echo "Bienvenido ".$user;
+                echo "Bienvenido ".$user." (".$profile.")";
                 echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
             } else {
                 include("./include/login_form.php");
@@ -56,6 +57,9 @@
         <?php
             if ($auth) {
                 include("./include/priv_nav.php");
+                if ($profile == "Admin") {
+                    include("./include/admin_nav.php");
+                }
             } else {
                 include("./include/pub_nav.php");
             }

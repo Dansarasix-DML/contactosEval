@@ -7,7 +7,10 @@
     include("./config/users.php");
 
     session_start();
-    
+    if (!$_SESSION["auth"]) {
+        header("location: aut_1.php");
+    }
+
     $auth = $_SESSION["auth"];
     $user = $_SESSION["user"];
     $profile = $_SESSION["profile"];
@@ -26,13 +29,8 @@
     <h1>Autentificación Básica</h1>
     <div id="sesion">
         <?php
-            if ($auth) {
-                echo "Bienvenido ".$user." (".$profile.")";
-                echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
-            } else {
-                include("./include/login_form.php");
-            }
-            
+            echo "Bienvenido ".$user." (".$profile.")";
+            echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
         ?>
     </div>
     <br/>
@@ -48,6 +46,6 @@
             }
         ?>
     </nav>
-    <h1>Público 1</h1>
+    <h1>Administración 1</h1>
 </body>
 </html>

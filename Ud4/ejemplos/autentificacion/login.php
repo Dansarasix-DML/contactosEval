@@ -20,6 +20,7 @@
         if ($user == $users[$key]["user"] && $pass == $users[$key]["passwd"]) {
             $_SESSION["auth"] = true;
             $_SESSION["user"] = $users[$key]["user"];
+            $_SESSION["profile"] = $users[$key]["profile"];
         }
     }    
 

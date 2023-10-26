@@ -13,6 +13,7 @@
 
     $auth = $_SESSION["auth"];
     $user = $_SESSION["user"];
+    $profile = $_SESSION["profile"];
 
 ?>
 
@@ -28,7 +29,7 @@
     <h1>Autentificación Básica</h1>
     <div id="sesion">
         <?php
-            echo "Bienvenido ".$user;
+            echo "Bienvenido ".$user." (".$profile.")";
             echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
         ?>
     </div>
@@ -37,6 +38,9 @@
         <?php
             if ($auth) {
                 include("./include/priv_nav.php");
+                if ($profile == "Admin") {
+                    include("./include/admin_nav.php");
+                }
             } else {
                 include("./include/pub_nav.php");
             }

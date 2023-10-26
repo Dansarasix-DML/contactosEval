@@ -57,6 +57,10 @@
                 "ejercicio 2" => "http://".$serverIp."/DWES/Ud3/actividad_4/actividad_1.php",
                 "ejercicio 5" => "http://".$serverIp."/DWES/Ud3/actividad_4/actividad_5.php"
             ),
+            "Actividades Evaluables"=> array(
+                "Ejercicio 1" => "http://".$serverIp."/DWES/Ud3/act_evaluables/eval_1/evaluable_1.php",
+                "Ejercicio 2" => "http://".$serverIp."/DWES/Ud3/act_evaluables/eval_2/evaluable_2.php"
+            ),
             "ejemplos 1" => array(
                 "ejemplo 1" => "http://".$serverIp."/DWES/Ud3/ejemplos_1/ejemplo1.php",
                 "ejemplo 2" => "http://".$serverIp."/DWES/Ud3/ejemplos_1/ejemplo2.php",
@@ -69,6 +73,29 @@
                 "tabla de multiplicar" => "http://".$serverIp."/DWES/Ud3/ejemplos_1/formularios/tabla_form/form_2.php"
             ),
             "porfolio" => "http://".$serverIp."/DWES/Ud3/porfolio/index.php"
+        ),
+        "Unidad 4" => array(
+            "Cookies" => array(
+                "Actividad 1" => "http://".$serverIp."/DWES/Ud4/act_1/actividad_1.php",
+                "Actividad 2" => "http://".$serverIp."/DWES/Ud4/act_1/actividad_2/actividad_2.php",
+                "Actividad 3" => "http://".$serverIp."/DWES/Ud4/act_1/actividad_3.php",
+                "Actividad 4" => "http://".$serverIp."/DWES/Ud4/act_1/actividad_4.php",
+                "Actividad 5" => "http://".$serverIp."/DWES/Ud4/act_1/actividad_5.php"
+            ),
+            "Sesiones" => array(
+                "Actividad 1" => "http://".$serverIp."/DWES/Ud4/act_2/actividad_1/actividad_1.php",
+            ),
+            "Ejemplos" => array(
+                "Cookie" => "http://".$serverIp."/DWES/Ud4/ejemplos/cookie.php",
+                "Sesiones" => array(
+                    "Sesión 1" => "http://".$serverIp."/DWES/Ud4/ejemplos/sesiones/index.php",
+                    "Sesión 2" => "http://".$serverIp."/DWES/Ud4/ejemplos/sesiones/index2.php",
+                    "Sesión 3" => "http://".$serverIp."/DWES/Ud4/ejemplos/sesiones/index3.php"
+                ),
+                "Autentificación" => array(
+                    "Autentificación 1" => "http://".$serverIp."/DWES/Ud4/ejemplos/autentificacion/aut_1.php",
+                ),
+            ),
         ),
         "Práctica" => array(
             "ambito 1" => "http://".$serverIp."/DWES/practica/ambito1.php",

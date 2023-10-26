@@ -41,3 +41,9 @@ table th{
     text-align: center;
     background-color: white;
 }
+
+.domingo{
+    border: medium solid black; 
+    text-align: center;
+    background-color: rgb(255, 152, 129);
+}
