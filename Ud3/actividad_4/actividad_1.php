@@ -61,6 +61,7 @@
         }
 
         //Obtenemos días totales
+        //$days = cal_days_in_month(CAL_GREGORIAN, $month, $year);
         $days = n_dias(intval($month), intval($year));
 
         // Validar día
@@ -76,6 +77,9 @@
 
     //Sacamos el primer día (1 = Lunes, 2 = Martes, etc.), con mktime sacas la marca de tiempo Unix de una fecha
     $first_day = date("N", mktime(0, 0, 0, intval($month), 1, intval($year)));
+
+    //Obtenemos semana santa
+    $semanasanta = Calc_SemSant($year);
 
 ?>
 
@@ -147,6 +151,9 @@
                     if (isset($festivos["local"][$month])) {
                         $festivo_local =  in_array($d, $festivos["local"][$month]);
                     }
+                    if ($month == $semanasanta[0]) {
+                        $festivo_nac = in_array($d, $semanasanta[1]);
+                    }
                     
                     $cond = ($month == $sys_month and $year == $sys_year);
                     $esdomingo = (date("N", mktime(0, 0, 0, intval($month), $d, intval($year))) == 7);
@@ -160,12 +167,10 @@
                         $color = "yellow";
                     } else if ($festivo_nac) {
                         $color = "red";
+                    } else if ($esdomingo) {
+                        $color = "domingo";
                     } else {
                         $color = "white";
-                    }
-
-                    if ($esdomingo) {
-                        $color = "domingo";
                     }
 
                     echo "<td class=\"".$color."\">$d</td>";

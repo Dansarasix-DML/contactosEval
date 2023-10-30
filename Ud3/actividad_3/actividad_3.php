@@ -18,22 +18,50 @@
     <p>Crear un array con los alumnos de clase y permitir la selección aleatoria de uno de<br/>
     ellos. El resultado debe mostrar nombre y fotografía.</p>";
 
-    $alumnos = array("Ayala Reina, Manuel David", "Carmona Bascón, Antonio", "Castillero Moriana, Andrés",
-    "Cevallos Paredes, Héctor Honorato", "Cordovero Crespo, Adrián", "Cubero Olivares, Ángel" , 
-    "Fernández Ariza, Ángel", "Fernández España, Víctor", "Frías Rojas, Jesús", "Galisteo Cebrián, Adrián",
-    "González Martínez, Adrián", "Luna Martín, Sergio", "Luque Bravo, Laura", "Marín López, Daniel",
-    "Mérida Velasco, Pablo", "Postigo Arévalo, Javier", "Priego Izquierdo, Alejandro", 
-    "Rodríguez Machado, Andrés", "Ruz Del Río, Enrique", "Ruz López, Eduardo", "Solís Tejada, Andrea",
-    "Tamajón Hernández, Guillermo", "Vaquero Abad, Alejandro", "Francisco Javier González Romero");
+    $alumnos = array(
+        "Ayala Reina, Manuel David" => 2, 
+        "Carmona Bascón, Antonio" => 2, 
+        "Castillero Moriana, Andrés" => 3,
+        "Cevallos Paredes, Héctor Honorato" => 100, 
+        "Cordovero Crespo, Adrián" => 4, 
+        "Cubero Olivares, Ángel" => 5, 
+        "Fernández Ariza, Ángel" => 2, 
+        "Fernández España, Víctor" => 100, 
+        "Frías Rojas, Jesús" => 2, 
+        "Galisteo Cebrián, Adrián" => 7,
+        "González Martínez, Adrián" => 6, 
+        "Luna Martín, Sergio" => 3, 
+        "Luque Bravo, Laura" => 5, 
+        "Marín López, Daniel" => 3,
+        "Mérida Velasco, Pablo" => 2, 
+        "Postigo Arévalo, Javier" => 3, 
+        "Priego Izquierdo, Alejandro" => 6, 
+        "Rodríguez Machado, Andrés" => 3, 
+        "Ruz Del Río, Enrique" => 3, 
+        "Ruz López, Eduardo" => 2, 
+        "Solís Tejada, Andrea" => 8,
+        "Tamajón Hernández, Guillermo" => 2, 
+        "Vaquero Abad, Alejandro" => 3, 
+        "Francisco Javier González Romero" => 5
+    );
 
     /**
      * Función anónima que da un alumno aleatorio
      * @param array $alumnos
      */
     $elegido = function ($alumnos) {
+        $totalPesos = array_sum($alumnos);
+        $numeroAleatorio = mt_rand(1, $totalPesos);
         echo "El alumno elegido es:";
+        foreach ($alumnos as $alumno => $peso) {
+            if ($numeroAleatorio <= $peso) {
+                echo "<h2>" . $alumno . "</h2>";
+                break;
+            }
+            $numeroAleatorio -= $peso;
+        }
         //random_int devuelve un número aleatorio entre un mínimo y un máximo
-        echo "<h2>" . $alumnos[random_int(0, count($alumnos) - 1)] . "</h2>";
+        //echo "<h2>" . $alumnos[random_int(0, count($alumnos) - 1)] . "</h2>";
     };
 
     $elegido($alumnos);
