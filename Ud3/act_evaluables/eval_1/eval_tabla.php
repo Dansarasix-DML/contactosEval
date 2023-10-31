@@ -61,13 +61,15 @@
     } else {
         //Generamos números aleatorios
         for ($i = 0; $i < $N_VERBS; $i++) {
-            $fila = random_int(0, LENGTH-1);
-            while (in_array($fila, $rep)) {
+            do {
                 $fila = random_int(0, LENGTH-1);
-            }
+            } while (in_array($fila, $rep));
+            $rep[] = $fila;
             $verbs_sel[$fila] = $verbos_irr[$fila];
             for ($c = 0; $c < $DIF; $c++) {
-                $a = random_int(0, 3);
+                do {
+                    $a = random_int(0, 2);
+                } while (existeValor($fila, $a, $n_aleatorios));
                 $n_aleatorios[] = array($fila, $a);
                 $valoresActuales[$fila][$a] = "";
             }

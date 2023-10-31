@@ -19,30 +19,30 @@
     ellos. El resultado debe mostrar nombre y fotografía.</p>";
 
     $alumnos = array(
-        "Ayala Reina, Manuel David" => 2, 
-        "Carmona Bascón, Antonio" => 2, 
-        "Castillero Moriana, Andrés" => 3,
+        "Ayala Reina, Manuel David" => 100, 
+        "Carmona Bascón, Antonio" => 100, 
+        "Castillero Moriana, Andrés" => 100,
         "Cevallos Paredes, Héctor Honorato" => 100, 
-        "Cordovero Crespo, Adrián" => 4, 
-        "Cubero Olivares, Ángel" => 5, 
-        "Fernández Ariza, Ángel" => 2, 
-        "Fernández España, Víctor" => 100, 
-        "Frías Rojas, Jesús" => 2, 
-        "Galisteo Cebrián, Adrián" => 7,
-        "González Martínez, Adrián" => 6, 
-        "Luna Martín, Sergio" => 3, 
-        "Luque Bravo, Laura" => 5, 
-        "Marín López, Daniel" => 3,
-        "Mérida Velasco, Pablo" => 2, 
-        "Postigo Arévalo, Javier" => 3, 
-        "Priego Izquierdo, Alejandro" => 6, 
-        "Rodríguez Machado, Andrés" => 3, 
-        "Ruz Del Río, Enrique" => 3, 
-        "Ruz López, Eduardo" => 2, 
-        "Solís Tejada, Andrea" => 8,
-        "Tamajón Hernández, Guillermo" => 2, 
-        "Vaquero Abad, Alejandro" => 3, 
-        "Francisco Javier González Romero" => 5
+        "Cordovero Crespo, Adrián" => 100, 
+        "Cubero Olivares, Ángel" => 100, 
+        "Fernández Ariza, Ángel" => 100, 
+        "Fernández España, Víctor" => 70, 
+        "Frías Rojas, Jesús" => 100, 
+        "Galisteo Cebrián, Adrián" => 100,
+        "González Martínez, Adrián" => 100, 
+        "González Romero, Francisco Javier" => 100,
+        "Luna Martín, Sergio" => 100, 
+        "Luque Bravo, Laura" => 100, 
+        "Marín López, Daniel" => 100,
+        "Mérida Velasco, Pablo" => 100, 
+        "Postigo Arévalo, Javier" => 100, 
+        "Priego Izquierdo, Alejandro" => 100, 
+        "Rodríguez Machado, Andrés" => 100, 
+        "Ruz Del Río, Enrique" => 100, 
+        "Ruz López, Eduardo" => 100, 
+        "Solís Tejada, Andrea" => 5,
+        "Tamajón Hernández, Guillermo" => 100, 
+        "Vaquero Abad, Alejandro" => 100
     );
 
     /**
@@ -51,7 +51,7 @@
      */
     $elegido = function ($alumnos) {
         $totalPesos = array_sum($alumnos);
-        $numeroAleatorio = mt_rand(1, $totalPesos);
+        $numeroAleatorio = mt_rand(10, $totalPesos);
         echo "El alumno elegido es:";
         foreach ($alumnos as $alumno => $peso) {
             if ($numeroAleatorio <= $peso) {
