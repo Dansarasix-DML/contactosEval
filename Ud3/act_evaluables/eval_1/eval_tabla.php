@@ -18,7 +18,6 @@
 
     //Cargamos valores
     $valoresActuales = array();
-    $rep = array();
     $verbs_sel = array();
     $n_aleatorios = array();
 
@@ -33,7 +32,7 @@
             }
 
             if (empty($_POST["n_verbos"])) {
-                $N_VERBS_ERR = "NÚMERO NO VÁLIDA";
+                $N_VERBS_ERR = "NÚMERO NO VÁLIDO";
                 $error = true;
             }
 
@@ -63,15 +62,14 @@
         for ($i = 0; $i < $N_VERBS; $i++) {
             do {
                 $fila = random_int(0, LENGTH-1);
-            } while (in_array($fila, $rep));
-            $rep[] = $fila;
+            } while (existeFila($fila, $verbs_sel));
             $verbs_sel[$fila] = $verbos_irr[$fila];
             for ($c = 0; $c < $DIF; $c++) {
                 do {
-                    $a = random_int(0, 2);
-                } while (existeValor($fila, $a, $n_aleatorios));
-                $n_aleatorios[] = array($fila, $a);
-                $valoresActuales[$fila][$a] = "";
+                    $columna = random_int(0, 2);
+                } while (existeValor($fila, $columna, $n_aleatorios));
+                $n_aleatorios[] = array($fila, $columna);
+                $valoresActuales[$fila][$columna] = "";
             }
 
         }

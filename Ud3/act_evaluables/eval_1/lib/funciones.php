@@ -21,4 +21,22 @@
         return $existe;
     }
 
+    /**
+     * @name existeFila
+     * @param int $fila Fila generada
+     * @param array $verbos Array de verbos
+     * 
+     * @return boolean Devuelve true si el valor ya está dentro
+     */
+    function existeFila($fila, $verbos){
+        $existe = false;
+        foreach ($verbos as $indice => $verbo) {
+            if ($indice == $fila) {
+                $existe = true;
+                break;
+            }
+        }
+        return $existe;
+    }
+
 ?>

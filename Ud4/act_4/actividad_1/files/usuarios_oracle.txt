@@ -1,0 +1,126 @@
+---
+CREATE USER ayrema IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO ayrema
+ALTER USER ayrema QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER cabaan IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO cabaan
+ALTER USER cabaan QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER camoan IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO camoan
+ALTER USER camoan QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER cepahe IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO cepahe
+ALTER USER cepahe QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER cocrad IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO cocrad
+ALTER USER cocrad QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER cuolan IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO cuolan
+ALTER USER cuolan QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER fearan IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO fearan
+ALTER USER fearan QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER feesvi IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO feesvi
+ALTER USER feesvi QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER frroje IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO frroje
+ALTER USER frroje QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER gacead IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO gacead
+ALTER USER gacead QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER gomaad IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO gomaad
+ALTER USER gomaad QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER gorofr IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO gorofr
+ALTER USER gorofr QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER latofran IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO latofran
+ALTER USER latofran QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER lumase IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO lumase
+ALTER USER lumase QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER lubrla IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO lubrla
+ALTER USER lubrla QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER maloda IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO maloda
+ALTER USER maloda QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER mevepa IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO mevepa
+ALTER USER mevepa QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER poarja IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO poarja
+ALTER USER poarja QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER prizal IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO prizal
+ALTER USER prizal QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER romaan IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO romaan
+ALTER USER romaan QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER ruderi IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO ruderi
+ALTER USER ruderi QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER ruloed IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO ruloed
+ALTER USER ruloed QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER sotean IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO sotean
+ALTER USER sotean QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER tahegu IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO tahegu
+ALTER USER tahegu QUOTA 100M ON 2daw_23-24
+COMMIT
+---
+CREATE USER vaabal IDENTIFIED BY usuario
+GRANT SELECT ON bdejemplo TO vaabal
+ALTER USER vaabal QUOTA 100M ON 2daw_23-24
+COMMIT
+---

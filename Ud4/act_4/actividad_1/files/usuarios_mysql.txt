@@ -1,0 +1,250 @@
+---
+Usuario: ayrema_2daw
+BD: ayrema_2daw
+AA: ay 
+aa: re 
+n: ma 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'ayrema'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: cabaan_2daw
+BD: cabaan_2daw
+AA: ca 
+aa: ba 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'cabaan'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: camoan_2daw
+BD: camoan_2daw
+AA: ca 
+aa: mo 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'camoan'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: cepahe_2daw
+BD: cepahe_2daw
+AA: ce 
+aa: pa 
+n: he 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'cepahe'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: cocrad_2daw
+BD: cocrad_2daw
+AA: co 
+aa: cr 
+n: ad 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'cocrad'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: cuolan_2daw
+BD: cuolan_2daw
+AA: cu 
+aa: ol 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'cuolan'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: fearan_2daw
+BD: fearan_2daw
+AA: fe 
+aa: ar 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'fearan'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: feesvi_2daw
+BD: feesvi_2daw
+AA: fe 
+aa: es 
+n: vi 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'feesvi'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: frroje_2daw
+BD: frroje_2daw
+AA: fr 
+aa: ro 
+n: je 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'frroje'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: gacead_2daw
+BD: gacead_2daw
+AA: ga 
+aa: ce 
+n: ad 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'gacead'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: gomaad_2daw
+BD: gomaad_2daw
+AA: go 
+aa: ma 
+n: ad 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'gomaad'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: gorofr_2daw
+BD: gorofr_2daw
+AA: go 
+aa: ro 
+n: fr 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'gorofr'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: latofran_2daw
+BD: latofran_2daw
+AA: lato 
+n: fran 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'latofran'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: lumase_2daw
+BD: lumase_2daw
+AA: lu 
+aa: ma 
+n: se 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'lumase'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: lubrla_2daw
+BD: lubrla_2daw
+AA: lu 
+aa: br 
+n: la 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'lubrla'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: maloda_2daw
+BD: maloda_2daw
+AA: ma 
+aa: lo 
+n: da 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'maloda'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: mevepa_2daw
+BD: mevepa_2daw
+AA: me 
+aa: ve 
+n: pa 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'mevepa'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: poarja_2daw
+BD: poarja_2daw
+AA: po 
+aa: ar 
+n: ja 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'poarja'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: prizal_2daw
+BD: prizal_2daw
+AA: pr 
+aa: iz 
+n: al 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'prizal'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: romaan_2daw
+BD: romaan_2daw
+AA: ro 
+aa: ma 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'romaan'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: ruderi_2daw
+BD: ruderi_2daw
+AA: ru 
+aa: de 
+n: ri 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'ruderi'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: ruloed_2daw
+BD: ruloed_2daw
+AA: ru 
+aa: lo 
+n: ed 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'ruloed'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: sotean_2daw
+BD: sotean_2daw
+AA: so 
+aa: te 
+n: an 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'sotean'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: tahegu_2daw
+BD: tahegu_2daw
+AA: ta 
+aa: he 
+n: gu 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'tahegu'@'localhost'
+IDENTIFIED BY 'clave'
+---
+Usuario: vaabal_2daw
+BD: vaabal_2daw
+AA: va 
+aa: ab 
+n: al 
+Ayuda:
+BD: CREATE DATABASE bdejemplo
+Usuarios: GRANT ALL PRIVILEGES ON bdejemplo.*TO'vaabal'@'localhost'
+IDENTIFIED BY 'clave'
+---
