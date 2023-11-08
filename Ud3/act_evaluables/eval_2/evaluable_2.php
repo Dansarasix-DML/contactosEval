@@ -3,7 +3,13 @@
      * @author Daniel Marín López
      * @version 0.01a
      * 
-     * Formulario de selección del test
+     * Enunciado: Crear una aplicación que permita practicar tests de autoescuela.
+     * 
+     * Análisis: Se pide crear un formulario para seleccionar uno de los tres
+     * tests (formularios) y luego decir las respuestas acertadas y si el
+     * test ha sido superado.
+     * 
+     * Este es el formulario de selección del test.
      */
 
     include("./config/tests_cnf.php");

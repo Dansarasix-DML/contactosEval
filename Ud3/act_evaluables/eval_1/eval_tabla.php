@@ -3,7 +3,15 @@
      * @author Daniel Marín López
      * @version 0.01a
      * 
-     * Tabla de verbos irregulares
+     * Esta es la tabla de verbos irregulares:
+     * 
+     * Se generán nº aleatorios y con ellos se extraen los verbos
+     * para crear la tabla. Una vez creada se pondrán inputs en
+     * los huecos de cada verbo (Dependiendo de la DIFicultad).
+     * 
+     * Al final, cuando el usuario envia la tabla esta pondrá
+     * de verde los aciertos y rojo los fallos y pondrá al final
+     * cuantos aciertos a tenido el usuario.
      */
     
     include "./config/verbos_cnf.php"; 

@@ -3,7 +3,7 @@
      * @author Daniel Marín López
      * @version 0.01a
      * 
-     * Formulario de test
+     * Aquí se cargará el test que el usuario ha elegido en el test anterior.
      */
 
     include "./config/tests_cnf.php";

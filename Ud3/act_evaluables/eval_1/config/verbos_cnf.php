@@ -3,7 +3,9 @@
      * @author Daniel Marín López
      * @version 0.01a
      * 
-     * Array de Verbos Irregulares
+     * Aquí está el Array de Verbos Irregulares y otras
+     * variables de configuración necesarias para nuestra
+     * aplicación.
      */
 
     //Constantes

@@ -85,6 +85,9 @@
             "Sesiones" => array(
                 "Actividad 1" => "http://".$serverIp."/DWES/Ud4/act_2/actividad_1/actividad_1.php",
             ),
+            "Ficheros"=> array(
+                "Actividad 1"=> "http://".$serverIp."/DWES/Ud4/act_4/actividad_1/index.php",
+            ),
             "Ejemplos" => array(
                 "Cookie" => "http://".$serverIp."/DWES/Ud4/ejemplos/cookie.php",
                 "Sesiones" => array(
@@ -95,6 +98,15 @@
                 "Autentificación" => array(
                     "Autentificación 1" => "http://".$serverIp."/DWES/Ud4/ejemplos/autentificacion/aut_1.php",
                 ),
+                "Ficheros" => array(
+                    "Fichero 1"=> "http://".$serverIp."/DWES/Ud4/ejemplos/ficheros/index.php",
+                )
+            ),
+        ),
+        "Unidad 5"=> array(
+            "Ejemplos"=> array(
+                "Contador" => "http://".$serverIp."/DWES/Ud5/ejemplos/index.php",
+                "Mascota"=> "http://".$serverIp."/DWES/Ud5/ejemplos/guia_1/mascotas/index.php",
             ),
         ),
         "Práctica" => array(
