@@ -1,3 +1,18 @@
+table{
+    border-collapse: collapse;
+}
+
+th{
+    border: medium solid black; 
+    text-align: center; 
+    background-color: #CCCCCC;
+}
+
+td{
+    border: medium solid black; 
+    text-align: center;
+}
+
 .acierto{
     border: 2px solid green;
 }
