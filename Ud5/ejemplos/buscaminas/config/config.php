@@ -3,9 +3,10 @@
      * @author Daniel Marín López
      * @version 0.01a
      * 
+     * Constantes del biscaminas
      */
 
-    define('DIRURL', '');
-    define('DIRPUBLIC', '');
-    
+    define("MINAS", 10);
+    define("COLUMNAS", 10);
+
 ?>

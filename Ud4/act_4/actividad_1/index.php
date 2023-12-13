@@ -49,7 +49,7 @@
             Fichero: <input type="file" name="file" id="file">
         </label>
         <br/><br/>
-        <input type="submit" name="envio" value="Enviar">
+        <input type="submit" name="envio" value="Descargar">
     </form>
 </body>
 </html>

@@ -1,0 +1,61 @@
+table{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: gray;
+    border: 2px solid;
+}
+
+td{
+    border: 2px solid;
+}
+
+.DWES{
+    background-color: blue;
+}
+
+.SIS{
+    background-color: blue;
+}
+
+.DWEC{
+    background-color: yellow;
+}
+
+.LM{
+    background-color: yellow;
+}
+
+.PROG{
+    background-color: greenyellow;
+}
+
+.DeAW{
+    background-color: darkcyan;
+}
+
+.ED{
+    background-color: darkcyan;
+}
+
+.BD{
+    background-color: orange;
+}
+
+.EIE{
+    background-color: orangered;
+}
+
+.HLC{
+    background-color: mediumslateblue;
+}
+
+.DIW{
+    background-color: purple;
+}
+
+.FOL{
+    background-color: red;
+}

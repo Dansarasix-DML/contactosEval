@@ -21,6 +21,12 @@
         array("Valor"=>"18-19","Literal"=>"2018/2019")
     ));
 
+    define("FICHEROS", array(
+        "A" => "usuarios_mysql.txt",
+        "B" => "usuarios_oracle.txt",
+        "C" => "usuarios_linux.txt"
+    ));
+
     define("ACENTOS", array('á', 'é', 'í', 'ó', 'ú', 'ñ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ'));
     define("SIN_ACENTOS", array('a', 'e', 'i', 'o', 'u', 'n', 'A', 'E', 'I', 'O', 'U', 'N'));
 

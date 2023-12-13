@@ -1,0 +1,51 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Clase</help_text><element><id>UMLClass</id><coordinates><x>340</x><y>20</y><w>220</w><h>350</h></coordinates><panel_attributes>Clase Mascota
+-
+/Atributos privados/
+- instancia
+-
+Atributos:
+- id: INT PRIMARY KEY
+- nombre: VARCHART
+- tipo: VARCHART
+- inteligencia: INT
+- created_at
+- updated_at
+-
+/Métodos de singleton/
+- getInstancia()
+- __clone()
+- setNombre($nombre)
+- setTipo($tipo)
+- setInteligencia($inteligencia)
+- getMensaje()
+- set()
+-
+Métodos:
+- comer()
+- entrenar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>300</w><h>370</h></coordinates><panel_attributes>/Abstract Class: DBAbstractModel/
+-
+Atributos privados
+- db_host
+- db_user
+- db_name
+- db_port
+-.
+/Atributos protegidos/
+/- mensaje/
+/- conexion/
+/- query/
+/- params/
+/- rows/
+-.
+/Métodos abstractos protegidos/
+/- read()/
+/- write()/
+/- edit()/
+/- delete()/
+-
+Métodos
+- open_connection() *protegido*
+- lastInsert() *público*
+- close_conection() *público*
+- get_results_from_query() *protegido*
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

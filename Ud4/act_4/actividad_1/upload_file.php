@@ -69,6 +69,27 @@
                             }
                             Genera_fichero(DIR_LOAD, $tipo, $curso, $alumnos);
                             
+                            $nombreArchivo = FICHEROS[$tipo];
+                            $rutaArchivo = DIR_LOAD . $nombreArchivo;
+
+                            // Verificar si el archivo existe antes de realizar la descarga
+                            if (file_exists($rutaArchivo)) {
+                                // Encabezados para forzar la descarga del archivo
+                                header('Content-Description: File Transfer');
+                                header('Content-Type: application/octet-stream');
+                                header('Content-Disposition: attachment; filename="' . $nombreArchivo . '"');
+                                header('Expires: 0');
+                                header('Cache-Control: must-revalidate');
+                                header('Pragma: public');
+                                header('Content-Length: ' . filesize($rutaArchivo));
+
+                                // Leer y mostrar el contenido del archivo
+                                readfile($rutaArchivo);
+                                unlink($rutaArchivo);
+                                exit;
+                            } else {
+                                echo "El archivo no existe.";
+                            }
                         }
                     }
                 }

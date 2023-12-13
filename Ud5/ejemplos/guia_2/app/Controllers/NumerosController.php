@@ -18,7 +18,22 @@
                 }
                 $i++;
             }
-            $data = array("mensaje" => "listado", "contenido" => $numeros);
+            $data = array("mensaje" => "Listado de números", "contenido" => $numeros);
+            $this->renderHTML("../views/numeros_view.php",$data);
+        }
+
+        public function NumerosDeseadosAction($request){
+            $url = explode("/", $request);
+            $numeros = [];
+            $i = 1;
+            while ($i <= intval($url[2]*2)) {
+                if ($i%2 == 0) {
+                    $numeros[] = $i;
+                    
+                } 
+                $i++;
+            }
+            $data = array("mensaje" => "Listado de números", "contenido" => $numeros);
             $this->renderHTML("../views/numeros_view.php",$data);
         }
 
