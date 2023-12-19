@@ -32,6 +32,8 @@
 
     // echo var_dump($_SESSION);
 
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -47,11 +49,36 @@
     <div id="sesion">
         <?php
             if ($auth) {
+                $comandas_pendientes = [];
                 echo "Bienvenido ".$user;
                 echo "<br/><a href=\"cierra_sesion.php\">Cerrar sesión</a>";
                 echo "<hr/>";
                 echo "<h3>Comandas</h3>";
-            } else {
+                $directorio = "../files/";
+                $archivos = scandir($directorio);
+
+                foreach ($archivos as $archivo) {
+                    if ($archivo != "." && $archivo != "..") {
+                        $rutaArchivo = $directorio . "/" . $archivo;
+
+                        $handle = fopen($rutaArchivo, "r");
+
+                        $primeraLinea = fgets($handle);
+
+                        fclose($handle);
+
+                        $comandas_pendientes[] = str_replace('-', '', $primeraLinea);
+                    }
+                }?>
+
+                <ul class="pendiente">
+                    <?php
+                        foreach ($comandas_pendientes as $comanda) {
+                            echo "<li>".$comanda."</li>";
+                        }
+                    ?>
+                </ul>
+            <?php } else {
                 echo "Por favor, identifiquese:<br/><br/>";
                 include("../include/login_form.php");
             }

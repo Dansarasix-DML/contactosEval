@@ -35,7 +35,7 @@
             die("No se pudo abrir el archivo");
         }
 
-        $text = "--- Pedidio realizado el ".date('d-m-Y \a \l\a\s H:i:s')." ---\n";
+        $text = "--- Pedidio realizado el ".date('d/m/Y \a \l\a\s H:i:s')." ---\n";
         $text .= "· Descripción - Unidades - Precio - Total\n";
 
         foreach ($pedido as $producto) {
@@ -69,7 +69,7 @@
             die("No se pudo abrir el archivo");
         }
 
-        $text = "--- Comanda realizada el ".date('d-m-Y \a \l\a\s H:i:s')." ---\n";
+        $text = "--- Comanda realizada el ".date('d/m/Y \a \l\a\s H:i:s')." ---\n";
         $text .= "· Descripción - Unidades - Precio - Total\n";
 
         foreach ($pedido as $producto) {

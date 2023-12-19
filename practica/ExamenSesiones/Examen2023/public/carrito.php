@@ -30,6 +30,12 @@
         exit;
     }
 
+    if (isset($_POST["cierre"])) {
+        session_unset();
+        session_destroy();
+        header("Location: pizzas.php");
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +44,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Carrito</title>
 </head>
 <body>
     <h1>FaMia</h1>
@@ -69,6 +75,7 @@
     <h3>EL TOTAL A PAGAR DEL PEDIDO ES DE <?php echo $total ?>€.</h3>
     <form action="" method="post">
         <input type="submit" name="tramite" value="Tramitar pedido">
+        <input type="submit" name="cierre" value="Cierre de sesión">
     </form>
 </body>
 </html>
