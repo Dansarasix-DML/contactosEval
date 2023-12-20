@@ -19,7 +19,7 @@
      * arriba del calendario.
     */
 
-    $link="https://github.com/Dansarasix-DML/DWES/blob/main/Ud3/actividad_4/actividad_1.php";
+    $link="https://github.com/Dansarasix-DML/DWES/tree/main/Ud4/act_eval";
 
 
     //Añadimos librerias
@@ -106,6 +106,8 @@
         $year = $sys_year;
     }
 
+    $_SESSION["date"] = "{$sys_year}-{$sys_month}-{$sys_day}";
+
     //Sacamos el primer día (1 = Lunes, 2 = Martes, etc.), con mktime sacas la marca de tiempo Unix de una fecha
     $first_day = date("N", mktime(0, 0, 0, intval($month), 1, intval($year)));
 
@@ -114,6 +116,7 @@
 
     if (!empty($_GET["selected_date"])) {
         // Actualizar $sys_day con el día seleccionado
+        $_SESSION["date"] = $_GET["selected_date"];
         list($selected_year, $selected_month, $selected_day) = explode("-", $_GET["selected_date"]);
         $sys_day = (int)$selected_day;
         $sys_month = $month = (int)$selected_month;
@@ -135,8 +138,8 @@
     </head>
     <body>
         <h1>Calendario con Sesiones</h1>
-        <p>Modifica el ejercicio del calendario para que el mes y el año se lean en un<br/>
-        formulario. Añade las siguientes especificaciones:<br/>
+        <p>El objetivo de esta actividad es añadir nuevas funcionalidades al proyecto de
+        calendario.</p><br/>
         <?php
         $month_name = $meses[$sys_month];
         if ($auth) {
@@ -155,6 +158,15 @@
         if ($auth) {
             echo "<br/><h3>Gestor de Tareas</h3><br/>";
             include "./include/taskForm.php";
+            echo "<br/><ul>";
+            foreach ($tareas as $tarea) {
+                list($extractedYear, $extractedMonth, $extractedDay) = explode("-", $tarea[0]);
+                if ($extractedYear == $sys_year && $extractedMonth == $sys_month && $extractedDay == $sys_day) {
+                    echo "<li>".$tarea[1]."</li>";
+    
+                }
+            }
+            echo "</ul>";
         }
         ?>
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">

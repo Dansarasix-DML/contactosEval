@@ -1,4 +1,4 @@
-<form method="post" action="agregar_tarea.php">
+<form method="post" action="newTask.php">
     <label for="tarea">Tarea:&nbsp;</label><input type="text" name="tarea" required>
-    <input type="submit" name="submit" value="Agregar Tarea">
+    <input type="submit" name="add" value="Agregar Tarea">
 </form>

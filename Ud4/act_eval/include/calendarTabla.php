@@ -2,6 +2,24 @@
     <tr><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th><th>Domingo</th></tr>
     <tr>
     <?php
+        $tareas = array();
+        $file = "./files/tasks.txt";
+
+        if (file_exists($file)) {
+            // Leer el contenido del archivo línea por línea
+            $lineas = file($file);
+            // Mostrar cada línea
+            foreach ($lineas as $linea) {
+                list($fecha, $tarea, $usuario) = explode(" | ", $linea);
+                if (test_input($usuario) == $_SESSION["user"]) {
+                    $tareas[] = array(test_input($fecha), test_input($tarea));
+                }
+            }
+        } else {
+            // Si el archivo no existe, mostrar un mensaje de error
+            echo 'El archivo no existe';
+        }
+
         // Creamos celdas vacías hasta el primer día de la semana
         for ($d = 1; $d < $first_day; $d++) {
             echo "<td class=\"white\"></td>";
@@ -11,6 +29,14 @@
 
         //Metemos días en la tabla
         for ($d = 1; $d <= $days ; $d++) { 
+            $hayTarea = false;
+            foreach ($tareas as $tarea) {
+                list($extractedYear, $extractedMonth, $extractedDay) = explode("-", $tarea[0]);
+                if ($extractedYear == $year && $extractedMonth == $month && $extractedDay == $d) {
+                    $hayTarea = true;
+
+                }
+            }
             //Booleanos para indicar si un día es local, comunidad o nacional
             $festivo_local = false;
             $festivo_com = false;
@@ -48,8 +74,10 @@
                 $style = "background-color: white;";
             }
 
+            $dia = ($hayTarea) ? "<b>".$d."</b>" : $d;
+
             $selected_date = "{$year}-{$month}-{$d}";
-            echo "<td style=\"{$style}\"><a href='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "?selected_date={$selected_date}'>$d</a></td>";
+            echo "<td style=\"{$style}\"><a href='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "?selected_date={$selected_date}'>$dia</a></td>";
 
             // Si es Domingo (día 7), termina la fila y empieza una nueva
             if ($first_day == 7) {
