@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>430</x><y>100</y><w>250</w><h>180</h></coordinates><panel_attributes>Clase Producto
+-
+- id
+- nombre
+- ingredientes
+- precio
+- cantidad
+-
+*- pedido_id*
+-
+/- añadir_producto/
+/- quitar_producto/
+/- modificar_producto/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>100</y><w>200</w><h>130</h></coordinates><panel_attributes>Clase Pedido
+-
+- id
+- productos
+- precio_total
+- ticket
+-
+/- pagar_pedido/
+/- cancelar_pedido/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>120</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=n..1
+m2=1..n </panel_attributes><additional_attributes>120;90;70;90;70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>250</y><w>200</w><h>160</h></coordinates><panel_attributes>Clase Comanda
+-
+- id
+- productos
+- archivo.txt
+- estado
+-
+*- pedido_id*
+-
+/- elaborar_comanda/
+/- borrar_comanda/
+/- cancelar_comanda/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>120</y><w>140</w><h>260</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..1</panel_attributes><additional_attributes>120;10;10;10;10;230;120;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>330</y><w>220</w><h>60</h></coordinates><panel_attributes>Clase Pizza (Hereda de Producto)
+-
+- tamaño</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>270</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Hereda de&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>

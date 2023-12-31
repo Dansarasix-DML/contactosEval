@@ -6,6 +6,7 @@
      */
 
     include "../config/users.php";
+    include "../lib/funciones.php";
 
     session_start();
     //Cargamos variables
@@ -42,6 +43,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Daniel Marín López">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comandStyle.css">
     <title>FaMia: Comandas</title>
 </head>
 <body>
@@ -57,6 +59,7 @@
                 $directorio = "../files/";
                 $archivos = scandir($directorio);
 
+                echo "<ul>";
                 foreach ($archivos as $archivo) {
                     if ($archivo != "." && $archivo != "..") {
                         $rutaArchivo = $directorio . "/" . $archivo;
@@ -67,17 +70,22 @@
 
                         fclose($handle);
 
-                        $comandas_pendientes[] = str_replace('-', '', $primeraLinea);
-                    }
-                }?>
-
-                <ul class="pendiente">
-                    <?php
-                        foreach ($comandas_pendientes as $comanda) {
-                            echo "<li>".$comanda."</li>";
+                        $nopendiente = (contienePalabra($archivo, "elaborada") ? true : false);
+                        $style = $nopendiente ? "elaborada" : "pendiente";
+                        echo "<li class=\"{$style}\"><form method=\"post\" action=\"comanForm.php\">";
+                        echo str_replace('-', '', $primeraLinea);;
+                        if (!$nopendiente) {
+                            echo "<input type=\"hidden\" name=\"archivo\" value=\"$archivo\">";
+                            echo "<input class=\"boton\" type=\"submit\" name=\"elaborar\" value=\"Realizar comanda\">";
+                        } else {
+                            echo "<input type=\"hidden\" name=\"archivo\" value=\"$archivo\">";
+                            echo "<input class=\"boton\" type=\"submit\" name=\"borrar\" value=\"Borrar comanda\">";
                         }
-                    ?>
-                </ul>
+                        echo "</form></li>";
+                    }
+                }
+                echo "</ul>" ?>
+
             <?php } else {
                 echo "Por favor, identifiquese:<br/><br/>";
                 include("../include/login_form.php");

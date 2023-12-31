@@ -89,4 +89,9 @@
         
     }
 
+    function contienePalabra($nombreArchivo, $palabraClave) {
+        // Utiliza strpos para verificar si la palabra clave está presente en el nombre del archivo
+        return strpos($nombreArchivo, $palabraClave) !== false;
+    }
+
 ?>
