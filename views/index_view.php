@@ -30,7 +30,8 @@
             echo "Estás como usuario";
             echo "<br/>";
             echo "<a href=\"http://contactos.eval/logout/\">Salir</a>";
-        }        
+        }   
+        include "include/search_view.php";     
         ?>
 
     </div>
@@ -38,7 +39,7 @@
     <?php                
 
         foreach ($data["contacto"] as $key => $value) {
-            echo $value["nombre"].", ".$value["telefono"].", ".$value["email"];
+            echo $value["nombre"].", ".$value["telefono"].", ".$value["email"].", ".$value["provincia"];
             if ($data["profile"] == "Usuario") {
                 include "include/actions_view.php";
             }

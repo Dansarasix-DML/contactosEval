@@ -111,12 +111,13 @@
         }
 
         public function set() {
-            $this->query = "INSERT INTO contacto (nombre, telefono, email)
-            VALUES(:nombre, :telefono, :email)";
+            $this->query = "INSERT INTO contacto (nombre, telefono, email, provincia)
+            VALUES(:nombre, :telefono, :email, :provincia)";
 
             $this->parametros['nombre']= $this->nombre;
             $this->parametros['telefono']= $this->telefono;
             $this->parametros['email']= $this->email;
+            $this->parametros['provincia']= $this->provincia;
             $this->getResultsFromQuery();
             //$this->execute_single_query();
             $this->mensaje = 'Contacto añadido';
@@ -128,6 +129,7 @@
             SET nombre=:nombre,
             telefono=:telefono,
             email=:email,
+            provincia=:provincia,
             updated_at=:fecha
             WHERE id = :id";
 
@@ -135,6 +137,7 @@
             $this->parametros['nombre'] = $this->nombre;
             $this->parametros['telefono'] = $this->telefono;
             $this->parametros['email'] = $this->email;
+            $this->parametros['provincia'] = $this->provincia;
             $this->parametros['fecha'] = date("Y-m-d H:m:s", $fecha->getTimestamp());
             $this->getResultsFromQuery();
             $this->mensaje = 'Contacto modificado';

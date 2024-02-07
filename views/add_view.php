@@ -36,6 +36,8 @@
         <br>
         Correo del contacto: <input type="email" name="correo">
         <br>
+        Provincia del contacto: <input type="text" name="prov">
+        <br>
         <input type="submit" name="creacion" value="Crear contacto">
     </form>
     <footer>Pie de página</footer>

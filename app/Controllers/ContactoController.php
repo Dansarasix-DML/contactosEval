@@ -13,9 +13,16 @@
     class ContactoController extends BaseController{
 
         public function IndexAction() {
+            $procesaForm = false;
+
             $contacto = Contacto::getInstancia();
 
-            $data["contacto"] = $contacto->getAll();
+            if (isset($_GET['provincia'])) {
+                $procesaForm = true;
+                $data["contacto"] = $contacto->getContactosByProvincia($_GET['provincia']);
+                
+            } else $data["contacto"] = $contacto->getAll();
+            
             $data["profile"] = $_SESSION["profile"];
 
             $this->renderHTML("../views/index_view.php", $data);
@@ -31,12 +38,14 @@
                 $nombre = filter_var($_POST["nombre"], FILTER_SANITIZE_STRING);
                 $tlf = filter_var($_POST["tlf"], FILTER_SANITIZE_STRING);
                 $correo = filter_var($_POST["correo"], FILTER_VALIDATE_EMAIL);
+                $prov = filter_var($_POST["prov"], FILTER_SANITIZE_STRING);
 
                 $contacto = Contacto::getInstancia();
 
                 $contacto->setNombre($nombre);
                 $contacto->setTelefono($tlf);
                 $contacto->setEmail($correo);
+                $contacto->setProv($prov);
                 $contacto->set();
 
                 header("Location: http://contactos.eval/");
@@ -60,6 +69,7 @@
                 $data["nombre"] = $datosContacto["nombre"];
                 $data["telefono"] = $datosContacto["telefono"];
                 $data["email"] = $datosContacto["email"];
+                $data["provincia"] = $datosContacto["provincia"];
                 
                 if (isset($_POST["edicion"])) {
                     $procesaForm = true;
@@ -67,11 +77,13 @@
                     $nombre = filter_var($_POST["nombre"], FILTER_SANITIZE_STRING);
                     $tlf = filter_var($_POST["tlf"], FILTER_SANITIZE_STRING);
                     $correo = filter_var($_POST["correo"], FILTER_VALIDATE_EMAIL);
+                    $prov = filter_var($_POST["prov"], FILTER_SANITIZE_STRING);
                     
                     
                     $data["nombre"] = $nombre;
                     $data["telefono"] = $tlf;
                     $data["correo"] = $correo;
+                    $data["provincia"] = $prov;
 
                     //VALIDACIÓN FORMULARIO EN SERVIDOR
 
@@ -83,6 +95,7 @@
                         $contacto->setNombre($nombre);
                         $contacto->setTelefono($tlf);
                         $contacto->setEmail($correo);
+                        $contacto->setProv($prov);
                         $contacto->edit();
 
                         header("Location: http://contactos.eval/");
@@ -173,6 +186,7 @@
                 $data["nombre"] = $datosContacto["nombre"];
                 $data["telefono"] = $datosContacto["telefono"];
                 $data["email"] = $datosContacto["email"];
+                $data["provincia"] = $datosContacto["provincia"];
                 
                 if (isset($_POST["borrado"])) {
                     
@@ -191,17 +205,25 @@
         
         }
 
-        public function getProvinciaAction($request) {
-            $contacto = Contacto::getInstancia();
+        // public function getProvinciaAction($request) {
 
-            $parts = explode("/", $request);
-            $provincia = $parts[2];
+        //     $procesaForm = false;
 
-            $data["contacto"] = $contacto->getContactosByProvincia($provincia);
-            $data["profile"] = $_SESSION["profile"];
+        //     if (isset($_GET["busca"])) {
+        //         $query = '%' . $_GET['busqueda'] . '%' ?? 5;
+        //         $procesaForm = true;
+        //     }
 
-            $this->renderHTML("../views/index_view.php", $data);
-        }
+        //     $contacto = Contacto::getInstancia();
+
+        //     $parts = explode("/", $request);
+        //     $provincia = $parts[2];
+
+        //     $data["contacto"] = $contacto->getContactosByProvincia($provincia);
+        //     $data["profile"] = $_SESSION["profile"];
+
+        //     $this->renderHTML("../views/index_view.php", $data);
+        // }
 
     }
 

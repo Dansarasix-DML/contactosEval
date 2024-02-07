@@ -36,6 +36,8 @@
         <br>
         Correo del contacto: <input type="email" name="correo" value="<?php echo $data["email"] ?>">
         <br>
+        Provincia del contacto: <input type="text" name="prov" value="<?php echo $data["provincia"] ?>">
+        <br>
         <input type="submit" name="edicion" value="Editar contacto">
     </form>
     <footer>Pie de página</footer>

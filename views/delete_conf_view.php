@@ -37,6 +37,8 @@
         <br>
         Correo del contacto: <?php echo $data["email"] ?>
         <br>
+        Provincia: <?php echo $data["provincia"] ?>
+        <br>
         <input type="submit" name="borrado" value="Borrar contacto">
     </form>
     <footer>Pie de página</footer>

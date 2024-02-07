@@ -21,7 +21,7 @@
 
     $router->add(array(
         "name"=>"home",
-        "path"=>"/^\/$/",
+        "path"=>"/^[\/]|[\/\?provincia=\w+]$/",
         "action"=>array(ContactoController::Class, "IndexAction"),
         "auth"=>array("Invitado", "Usuario")
     ));
@@ -68,12 +68,12 @@
         "auth"=>array("Usuario")
     ));
 
-    $router->add(array(
-        "name"=>"provincia",
-        "path"=>"/^\/getprov\/\w+\/$/",
-        "action"=>array(ContactoController::Class, "getProvinciaAction"),
-        "auth"=>array("Invitado", "Usuario")
-    ));
+    // $router->add(array(
+    //     "name"=>"provincia",
+    //     "path"=>"/^\/\?provincia=\p{L}+$/",
+    //     "action"=>array(ContactoController::Class, "IndexAction"),
+    //     "auth"=>array("Invitado", "Usuario")
+    // ));
 
     $request = $_SERVER['REQUEST_URI'];
 
