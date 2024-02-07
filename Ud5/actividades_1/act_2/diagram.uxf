@@ -1,9 +1,0 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>150</x><y>80</y><w>210</w><h>130</h></coordinates><panel_attributes>Clase: Usuario
---
-Atributos:
-	- user: nombre del usuario
-	- passwd: contraseña del usuario 
---
-Descripción:
-Clase se un usuario normal 
-de nuestra aplicación.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
